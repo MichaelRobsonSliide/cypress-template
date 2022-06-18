@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "prettier:check": "npx prettier --check **",
+    "prettier:check": "npx prettier --check *.js",
     "prettier:fix": "prettier --write .",
     "eslint:check": "eslint '**/*.{js,jsx,tsx,ts}'",
     "eslint:attemptFix": "eslint --fix '**/*.{js,jsx,tsx,ts}'",
