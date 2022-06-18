@@ -7,10 +7,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Linting
+        uses: cypress-io/github-action@v4
+        with:
+          start: npm run linting
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-          lint: npm run linting
           start: npm run allTests
       - name: Upload Artifact
         if: always()
