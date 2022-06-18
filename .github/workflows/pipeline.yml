@@ -10,6 +10,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
+          lint: npm run linting
           start: npm run allTests
       - name: Upload Artifact
         if: always()
