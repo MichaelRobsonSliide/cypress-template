@@ -1,4 +1,4 @@
-name: Cypress Test Run
+name: Cypress Test Suite
 "on":
   - push
 jobs:
@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - run: npm install
       - run: npm run linting
-      - name: Cypress run
+      - name: Test Run
         uses: cypress-io/github-action@v4
         with:
           start: npm run allTests
