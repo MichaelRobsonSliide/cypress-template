@@ -1,0 +1,32 @@
+{
+  "name": "cypress-template",
+  "version": "1.0.0",
+  "description": "Basic Cypress Framework That Can Be Copied And Used By Other Projects",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "prettier:check": "npx prettier --check **",
+    "prettier:fix": "prettier --write .",
+    "eslint:check": "eslint '**/*.{js,jsx,tsx,ts}'",
+    "eslint:attemptFix": "eslint --fix '**/*.{js,jsx,tsx,ts}'",
+    "linting": "npm run prettier:check && npm run eslint:check",
+    "beforePR": "npm run prettier:fix && npm run eslint:attemptFix",
+    "allTests": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelRobsonSliide/cypress-template.git"
+  },
+  "author": "Michael Robson",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^10.1.0",
+    "cypress-audit": "^1.1.0",
+    "cypress-mochawesome-reporter": "^3.1.0",
+    "cypress-multi-reporters": "^1.6.1",
+    "eslint": "^8.17.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "prettier": "^2.7.0"
+  }
+}

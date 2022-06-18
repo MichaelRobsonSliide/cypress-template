@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+
+# Cypress screenshots and videos 
+cypress/screenshots
+cypress/videos
+cypress/downloads
+
+# Reports
+cypress/reports
+mochawesome.json
