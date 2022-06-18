@@ -21,5 +21,23 @@ jobs:
           path: cypress/reports/index.html
           retention-days: 5
 
+    cypress-run2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          start: npm run allTests
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: cypress/reports/index.html
+          retention-days: 5
+
 
 
