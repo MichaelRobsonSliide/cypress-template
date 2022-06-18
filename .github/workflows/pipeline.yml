@@ -15,7 +15,9 @@ jobs:
         with:
           start: npm run allTests
   report:
-    - name: 'Upload Artifact'
+  runs-on: ubuntu-latest
+  steps:
+  - name: 'Upload Artifact'
     uses: actions/upload-artifact@v3
     with:
       name: Cypress Report
