@@ -14,12 +14,6 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: npm run allTests
-  report:
-  runs-on: ubuntu-latest
-  steps:
-  - name: 'Upload Artifact'
-    uses: actions/upload-artifact@v3
-    with:
-      name: Cypress Report
-      path: cypress/reports/index.html
-      retention-days: 5
+
+
+
