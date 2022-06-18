@@ -14,3 +14,9 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: npm run allTests
+      - name: Export Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-mochawesome-reporter
+          path: cypress/reports/index.html
+          retention-days: 5
