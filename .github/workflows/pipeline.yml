@@ -20,7 +20,6 @@ jobs:
           name: my-artifact
           path: cypress/reports/index.html
           retention-days: 5
-
     cypress-run2:
     runs-on: ubuntu-latest
     steps:
@@ -38,6 +37,3 @@ jobs:
           name: my-artifact
           path: cypress/reports/index.html
           retention-days: 5
-
-
-
