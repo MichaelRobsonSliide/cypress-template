@@ -1,4 +1,4 @@
-name: Cypress Test Suite
+name: Cypress Template Test Suite
 "on":
   - push
 jobs:
